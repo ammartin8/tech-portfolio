@@ -5,9 +5,14 @@
 /* Bootstrap Jumbotron additional styling*/
 .jumbotron {
     background-image:
-    linear-gradient(rgb(56, 204, 36,0.9), rgb(238, 34, 119,0.9)),
+    linear-gradient(rgba(241, 9, 86, 0.9), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9)),
     url(https://placeimg.com/1000/480/tech/grayscale);
     background-size: cover, cover;
+    border-radius: 0;
+}
+
+.skillSection {
+    background-color: rgb(101, 80, 145);
 }
 
 /* Zoom in effect on Projects */
@@ -39,11 +44,12 @@
 };
 
 /* Styling all links on page  */
-.bootstrapOverride:hover {
-    text-decoration: none;
-    color: #973B3B;
+a:hover #bootstrapOverride {
+    color: tomato;
 }
 
+
+/* Allow links to scroll smoothly to next link on page */
 html {
     scroll-behavior: smooth;
 }
