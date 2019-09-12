@@ -2,20 +2,77 @@
     box-sizing: border-box;
 }
 
-/* Bootstrap Jumbotron additional styling*/
+/* Bootstrap Jumbotron styling*/
 .jumbotron {
     background-image:
-    linear-gradient(rgba(241, 9, 86, 0.9), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9)),
-    url(https://placeimg.com/1000/480/tech/grayscale);
+    linear-gradient(rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9)),
+    url('../img/jumbo_background_final.jpg');
     background-size: cover, cover;
     border-radius: 0;
 }
 
+.profilepic {
+    min-width: 200px;;
+}
+
+.learnMoreHover{
+        animation-name: floating;
+        -webkit-animation-name: floating;
+    
+        animation-duration: 1.5s;	
+        -webkit-animation-duration: 1.5s;
+    
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+    
+    @keyframes floating {
+        0% {
+            transform: translateY(0%);	
+        }
+        50% {
+            transform: translateY(15%);	
+        }	
+        100% {
+            transform: translateY(0%);
+        }			
+    }
+    
+    @-webkit-keyframes floating {
+        0% {
+            -webkit-transform: translateY(0%);	
+        }
+        50% {
+            -webkit-transform: translateY(15%);	
+        }	
+        100% {
+            -webkit-transform: translateY(0%);
+        }			
+    }
+
+/* Styling Skill Section */
 .skillSection {
     background-color: rgb(101, 80, 145);
 }
 
-/* Zoom in effect on Projects */
+.skillHeader {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.card-header {
+    background-color:  rgb(101, 80, 145);
+}
+
+.cardLength {
+    height: 35rem;
+}
+
+.card-body img {
+    width: 2.5em;
+}
+
+/* Zoom in effect on Portfolio Projects */
 .photoPortStyle:hover,
 .photoPortStyle:focus {
     width: 100%;
@@ -30,7 +87,6 @@
     }
 }
 
-
 /* Profile Pic Animation*/
 .profilepic:hover {
     animation-name: spinny;
@@ -43,13 +99,48 @@
 }
 };
 
+/* Portfolio section */
+.comingSoonAnimate:hover {
+    animation-name: spinny;
+    animation-duration: 2s;
+     
+}
+@keyframes spinny {
+    100%{
+        transform: rotateY(360deg); 
+}
+};
+
+
 /* Styling all links on page  */
 a:hover #bootstrapOverride {
     color: tomato;
 }
 
+.nounderline {
+    text-decoration: none !important;
+}
 
+
+/* call to action button  */
+.callToAction:hover {
+    background-image: linear-gradient(to right, rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9));
+    border-color:  rgba(241, 9, 86);
+}
+
+.callToActionLink,
+.callToActionLink:hover {
+    color: #fff;
+    text-decoration: none;
+}
 /* Allow links to scroll smoothly to next link on page */
 html {
     scroll-behavior: smooth;
+}
+
+
+.cardSlide
+{
+    display: none;
+    padding-top: 10px;
 }

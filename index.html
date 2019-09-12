@@ -2,14 +2,17 @@
 <html lang="en">
   <head>
     <title>Portfolio | Amah Martin - Front-End Developer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <header>
+  <header>
   <div class="collapse bg-dark" id="navbarHeader">
     <div class="container">
       <div class="row">
@@ -23,7 +26,7 @@
           <ul class="list-unstyled">
             <li><a href="https://www.twitter.com/amuzen22" class="text-white">Follow on Twitter</a></li>
             <li><a href="https://github.com/ammartin8" class="text-white">Follow on GitHub</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="mailto:ammartin8249@gmail.com" class="text-white">Email me</a></li>
           </ul> 
         </div>
       </div>
@@ -42,76 +45,110 @@
   </div>
 </header>
 
-<main role="main">
+  <main role="main">
 
   <section class="jumbotron text-center my-0">
     <div class="container">
-      <img src="img/profile_pic.jpg" class="img-fluid rounded-circle col-4 mb-4 profilepic" style="width: 200px;" >
+      <img src="img/profile_pic.jpg" class="img-fluid rounded-circle col-4 mb-4 profilepic" style="width: 200px" >
       <h1 class="jumbotron-heading">Front End Web Developer</h1>
       <p class="lead">Hello World, I'm Amah. I am a Front-End Web Developer who specializes in web design, front-end development and social media.</p>
       <p>
-        <a href="#portfolioSlideFocus" class="btn btn-primary my-2">Review Portfolio</a>
-        <a href="#" class="btn btn-secondary bg-success my-2">Hire Me</a>
+        <a href="#skillSection" class="nounderline" style="color: rgb(139, 46, 192); font-size: 20px">Learn More
+        <br><i class="fa fa-angle-down learnMoreHover" aria-hidden="true" style="color: rgb(139, 46, 192); font-size: 2.5em"></i></a>
       </p>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <div class="album pt-5 pb-2 bg-light">
-    <div class="container" id="portfolioSlideFocus">
-
+  <!-- Skills Section -->
+    <div id="skillSection" class="container mt-5 mb-5">
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm zoomParent">
-            <img class="bd-placeholder-img card-img-top photoPortStyle" width="100%" height="225" src="img/photoPortfolioSite.JPG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Mellow A Photography Portfolio Site</text></svg>
-            <div class="card-body">
-              <p class="card-text">Photography Portfolio Website featuring a blog site, interactive photography and slide show displaying photographs.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary photoPortfoliosite"><a class="bootstrapOverride" href="https://ammartin8.github.io" target="_blank">View</a></button>
-                </div>
-              </div>
+
+        <div class="col-xs-12 col-sm-5 col-lg-5 mx-auto cardLength mb-2">
+          <div class="card mb-4 h-100">
+            <p class="text-center card-header skillHeader text-nowrap">Front-end Web Development</p>
+            <div class="card-body">  
+              <img src="img/code.svg" class="img-fluid d-block mx-auto mb-2" style="width: 3em">
+              <p class="text-center">Technical Skills</p>  
+                <ul class="row d-block text-center">
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Bootstrap</li>
+                  <li>Bulma</li>
+                  <li>JQuery</li>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>Terminal</li>
+                </ul>
+              <br>
+              <p class="text-center">Projects I Enjoy Working On</p>
+                <ul class="row d-block text-center">
+                  <li>Product Landing Pages</li>
+                  <li>UX/UI Design</li>
+                  <li>Small Business Websites</li>
+                </ul>
+
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
+        <div class="col-xs-12 col-sm-5 col-lg-5 mx-auto cardLength mb-2">
+          <div class="card mb-4 h-100">
+              <p class="text-center card-header skillHeader">Design and Illustration</p>
+              <div class="card-body">
+              <img src="img/pencil-ruler.svg" class="img-fluid d-block mx-auto mb-2">
+              <p class="subheader text-center">Technical Skills</p>
+                <ul class="text-center">
+                  <li>Adobe Illustrator</li>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Lightroom</li>
+                  <li>Affinity Designer</li>
+                  <li>Affinity Photo</li>
+                  <li>Photography</li>
+                  <li>&nbsp;</li>
+                </ul>
+                <br>
+                <p class="subheader text-center">Projects I Enjoy Working on</p>
+                  <ul class="text-center">
+                    <li>Logo Designs</li>
+                    <li>Photo Image Editing</li>
+                    <li>Business and Stationary Cards</li>
+                    <li>Icons and Banners</li>
+                    <li>T-shirt Designs</li>
+                  </ul>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-</main>
-
-    <!-- Skills Section -->
-    <div class="row justify-content-center skillSection">
-        <img class="col-2" src="img/css3.svg" style="width: 100%; height: 100px">
-        <img class="col-2" src="img/html5.svg" style="width: 100%; height: 100px">
-        <img class="col-2" src="img/js.svg" style="width: 100%; height: 100px">
+      </div>
     </div>
+        
+  </main>
+  <!-- /Skills Section -->
+
+    <!-- Portfolio Section -->
+    <h3 class ="text-center mb-5">Recent Portfolio Projects</h3>
+      <div class="container mb-5 mt-3">
+        <div class="row">
+          <div class="col">
+            <img src="img/photoPortfolioSite.JPG" class="img-fluid" alt="Image preview of Mellow A Photography website project" style="width: 300px">
+          </div>
+          <div class="col">
+            <img src="img/coming_soon_preview.svg" class="img-fluid d-block mx-auto comingSoonAnimate" alt="text stating coming soon" style="width: 200px">
+          </div>
+          <div class="col">
+            <img src="img/coming_soon_preview.svg" class="img-fluid d-block mx-auto comingSoonAnimate" alt="text stating coming soon" style="width: 200px">
+          </div>
+        </div>
+      </div>
+    <!-- /Portfolio Section -->
+
+    <!-- Collab Banner -->
+    <div class="container text-center mb-3">
+        <p>Combining both creativity and logical thinking to bring an great idea to life is what gets me excited about programming and Web Development.
+          <br><br>Whether it's designing unique brand logo for your business, providing feedback to better enhance your website and gain new customers or bringing your idea to life to share with the world, I would be thrilled to join you in journey to make your business goals a reality .</p>
+        <p>Interested in Working Together?</p>
+        <button class="btn btn-success callToAction"><a href="mailto:ammartin8249@gmail.com" class="callToActionLink">Let Collaborate</a></button>
+    </div>
+    <!-- /Collab Banner -->
 
 <footer class="text-muted bg-dark">
   <div class="container">
@@ -122,16 +159,23 @@
       <ul class="list-unstyled">
         <li><a href="https://www.twitter.com/amuzen22" class="bootstrapOverride">Follow on Twitter</a></li>
         <li><a href="https://github.com/ammartin8" class="bootstrapOverride">Follow on GitHub</a></li>
-        <li><a href="#" class="bootstrapOverride">Email me</a></li>
+        <li><a href="mailto:ammartin8249@gmail.com" class="bootstrapOverride">Email me</a></li>
       </ul> 
-      <p class="text-center my-0">&copy; 2019 Amadeus Designs</p>
+      <p class="text-center my-0">&copy; 2019 Designed by Me</p>
 </footer>
   <!-- scripts -->
-  <script src="https://kit.fontawesome.com/44f9f33b0e.js"></script> 
   <script src="js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+            crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+      crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="https://kit.fontawesome.com/44f9f33b0e.js" crossorigin="anonymous"></script>
   <!-- /scripts  -->
   
 </body>

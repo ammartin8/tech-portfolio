@@ -1,4 +1,5 @@
-// Accessing portfoliobutton
-var portfolioSlideFocus = document.getElementsByClassName("portfolioSlideFocus");
+// Slide each portfolio car on scroll queue
 
-// On click slide to portfolio section 
+//Cache reference to window and animation items
+
+$(".cardSlide").slideDown(3000);
