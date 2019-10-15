@@ -3,3 +3,4 @@
 //Cache reference to window and animation items
 
 $(".cardSlide").slideDown(3000);
+

@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+/* Allow links to scroll smoothly to next link on page */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
 /* Bootstrap Jumbotron styling*/
 .jumbotron {
     background-image:
@@ -56,7 +64,7 @@
 }
 
 .skillHeader {
-    font-size: 1.2em;
+    font-size: 2.0em;
     color: #fff;
 }
 
@@ -65,13 +73,20 @@
 }
 
 .cardLength {
-    height: 35rem;
+    height: 45rem;
 }
 
 .card-body img {
     width: 2.5em;
 }
 
+.subheader {
+    font-size: 1.1em;
+}
+
+.listItems {
+    font-size: 1.0em;
+}
 /* Zoom in effect on Portfolio Projects */
 .photoPortStyle:hover,
 .photoPortStyle:focus {
@@ -111,9 +126,13 @@
 }
 };
 
+/* Overlay of project images */
+.portfolioImage:hover {
+    color: aqua;
+}
 
 /* Styling all links on page  */
-a:hover #bootstrapOverride {
+a:hover {
     color: tomato;
 }
 
@@ -122,25 +141,22 @@ a:hover #bootstrapOverride {
 }
 
 
-/* call to action button  */
+/* call to action button  styling*/
 .callToAction:hover {
     background-image: linear-gradient(to right, rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9));
-    border-color:  rgba(241, 9, 86);
+    border: none;
 }
 
 .callToActionLink,
 .callToActionLink:hover {
     color: #fff;
     text-decoration: none;
-}
-/* Allow links to scroll smoothly to next link on page */
-html {
-    scroll-behavior: smooth;
+    font-size: 1.5em;
 }
 
-
-.cardSlide
-{
-    display: none;
-    padding-top: 10px;
+/*Normal paragraph text styling*/
+.paragraphText {
+    font-size: 1.5em;
+    max-width: 100%;
+    text-align: center;  
 }
