@@ -10,6 +10,15 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
 }
+
+/*navbar header styling*/
+#navbarHeader p, a{
+    font-size: 1.2em;
+}
+
+.logo {
+    font-size: 1.8em;
+}
 /* Bootstrap Jumbotron styling*/
 .jumbotron {
     background-image:
@@ -73,7 +82,7 @@ body {
 }
 
 .cardLength {
-    height: 45rem;
+    height: 40rem;
 }
 
 .card-body img {
@@ -84,22 +93,9 @@ body {
     font-size: 1.1em;
 }
 
+/*styling list items in each skill section card*/
 .listItems {
-    font-size: 1.0em;
-}
-/* Zoom in effect on Portfolio Projects */
-.photoPortStyle:hover,
-.photoPortStyle:focus {
-    width: 100%;
-    height: 100%;
-    animation-name: zoomin;
-    animation-duration: 3s;
-    animation-fill-mode: forwards; 
-}
-@keyframes zoomin {
-    100%{
-        transform: scale(1.05);
-    }
+    font-size: 1.2em;
 }
 
 /* Profile Pic Animation*/
@@ -127,14 +123,15 @@ body {
 };
 
 /* Overlay of project images */
-.portfolioImage:hover {
-    color: aqua;
-}
+
 
 /* Styling all links on page  */
-a:hover {
-    color: tomato;
+footer a, 
+footer a:hover{
+    color: #fff;
+    font-size: 1.2em;
 }
+
 
 .nounderline {
     text-decoration: none !important;
