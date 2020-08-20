@@ -173,17 +173,18 @@ body {
 
 
 /* call to action button  styling*/
-.callToAction {
+/* .callToAction {
     width: 7em;
     height: 2em;
     font-size: 1.1em;
-}
+} */
 
 .callToActionLink {
     font-size: 1.5em;
+    border-radius: 5px 5px;
 }
 
-.callToAction:hover {
+.callToActionLink:hover {
     background-image: linear-gradient(to right, rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9));
     border: none;
 }
