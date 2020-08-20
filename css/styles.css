@@ -11,8 +11,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+
+
 /*navbar header styling*/
-#navbarHeader p, a{
+#navbarHeader p, #navbarHeader a{
     font-size: 1.2em;
 }
 
@@ -45,11 +47,13 @@ body {
 .nav-links {
     display: flex;
     flex-direction: row;
+
 }
 
 .nav-links > li {
     margin: 1em;
     color: #fff;
+    font-size: 1.2em;
 }
 
 .nav-links > li > a {
@@ -162,12 +166,6 @@ body {
 
 
 /* Styling all links on page  */
-footer a, 
-footer a:hover{
-    color: #fff;
-    font-size: 1.2em;
-}
-
 
 .nounderline {
     text-decoration: none !important;
@@ -175,6 +173,16 @@ footer a:hover{
 
 
 /* call to action button  styling*/
+.callToAction {
+    width: 7em;
+    height: 2em;
+    font-size: 1.1em;
+}
+
+.callToActionLink {
+    font-size: 1.5em;
+}
+
 .callToAction:hover {
     background-image: linear-gradient(to right, rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9));
     border: none;
@@ -184,7 +192,6 @@ footer a:hover{
 .callToActionLink:hover {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5em;
 }
 
 /*Normal paragraph text styling*/
@@ -200,8 +207,27 @@ footer a:hover{
     background-color: rgb(21, 10, 80);
 }
 
-@media(max-width:640px) {
+.footer-section a {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+@media(max-width:764px) {
+    #navbar .container {
+        display: flex;
+        flex-direction: column;
+    }
+
     ul.nav-links {
-        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul.nav-links li {
+        margin: .1em;
+    }
+
+    .intro-section {
+        margin-top: 12em;
     }
 }
