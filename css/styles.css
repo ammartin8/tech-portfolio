@@ -19,13 +19,45 @@ body {
 .logo {
     font-size: 1.8em;
 }
+
+#welcome-section {
+    height: 100vh;
+}
 /* Bootstrap Jumbotron styling*/
 .jumbotron {
     background-image:
-    linear-gradient(rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9)),
+    linear-gradient(rgb(74, 9, 104), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9)),
     url('../img/jumbo_background_final.jpg');
     background-size: cover, cover;
     border-radius: 0;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: rgb(21, 10, 80);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links > li {
+    margin: 1em;
+    color: #fff;
+}
+
+.nav-links > li > a {
+    color: #fff;
+}
+
+.intro-section {
+    margin-top: 3em;
 }
 
 .profilepic {
@@ -77,8 +109,12 @@ body {
     color: #fff;
 }
 
+.card {
+    box-shadow: 10px 10px 10px grey;
+}
+
 .card-header {
-    background-color:  rgb(101, 80, 145);
+    background-color:  rgb(46, 28, 85);
 }
 
 .cardLength {
@@ -156,4 +192,16 @@ footer a:hover{
     font-size: 1.5em;
     max-width: 100%;
     text-align: center;  
+}
+
+
+/*Styling Footer Section*/
+.footer-section {
+    background-color: rgb(21, 10, 80);
+}
+
+@media(max-width:640px) {
+    ul.nav-links {
+        display: none;
+    }
 }
